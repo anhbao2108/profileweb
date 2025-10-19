@@ -7,17 +7,17 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* 🌌 Nền tổng thể */
+/* 🌤 Tổng thể */
 body {
-  background-color: #0000A3; /* Xanh cobalt */
-  color: #FFFFFF;
+  background-color: #FFFFFF; /* Trắng để dễ thở hơn */
+  color: #1C1C1C;
   line-height: 1.6;
 }
 
 /* 🔵 Header */
 header {
-  background-color: #00008B; /* Xanh navy đậm hơn nhẹ */
-  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+  background-color: #0000A3; /* Xanh cobalt */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -72,7 +72,7 @@ nav a:hover {
   color: #FFFFFF;
 }
 
-/* 🔥 Nút bấm */
+/* 🔘 Nút bấm */
 button {
   background-color: #FF6B00;
   color: #FFFFFF;
@@ -89,7 +89,7 @@ button:hover {
   transform: translateY(-3px);
 }
 
-/* 📚 Nội dung */
+/* 📚 Section chung */
 .section {
   max-width: 900px;
   margin: 60px auto;
@@ -97,10 +97,11 @@ button:hover {
   padding: 0 20px;
 }
 
-.section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #FFD900; /* vàng sáng */
+/* Xen kẽ màu nền cho mỗi section */
+.section:nth-child(even) {
+  background-color: #F9F9FF; /* Xanh nhạt pha trắng */
+  border-radius: 16px;
+  padding: 60px 20px;
 }
 
 /* 🧱 Dự án */
@@ -111,10 +112,10 @@ button:hover {
 }
 
 .project-card {
-  background-color: #0A0A7A; /* xanh tối */
+  background-color: #FFFFFF;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 10px rgba(0,0,163,0.1);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -132,12 +133,12 @@ button:hover {
 
 .email-link:hover {
   text-decoration: underline;
-  color: #FFD900;
+  color: #0000A3;
 }
 
 /* 🌙 Footer */
 footer {
-  background-color: #00006B;
+  background-color: #0000A3;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
