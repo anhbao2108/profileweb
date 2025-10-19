@@ -1,148 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bookstore & Café</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #001F3F; /* navy */
+      color: #FFD700; /* vàng đậm */
+    }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
+    header {
+      background-color: #FFD700; /* vàng */
+      color: #001F3F; /* navy */
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
 
-/* 🎨 Màu nền & chữ tổng thể */
-body {
-  background-color: #FAF3F3;  /* Hồng đất nhạt */
-  color: #2B2B2B;             /* Xám đậm dễ đọc */
-  line-height: 1.6;
-}
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #001A33;
+      padding: 10px 0;
+    }
 
-/* 🌸 Header */
-header {
-  background-color: #0E3A5D; /* Xanh navy */
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
+    nav a {
+      color: #FFD700;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
 
-nav {
-  max-width: 1000px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-}
+    nav a:hover {
+      color: white;
+    }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
+    section {
+      padding: 50px 10%;
+    }
 
-nav a {
-  text-decoration: none;
-  color: #FAF3F3; /* Hồng nhạt trên nền navy */
-  font-weight: 500;
-  transition: color 0.3s;
-}
+    h2 {
+      color: #FFD700;
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
 
-nav a:hover {
-  color: #F26B6B; /* Hồng đất nổi bật khi hover */
-}
+    .card {
+      background-color: #002b5b;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      color: white;
+      transition: transform 0.3s;
+    }
 
-/* 🌅 Hero Section */
-#hero {
-  background: linear-gradient(135deg, #0E3A5D, #123E73);
-  color: #FAF3F3;
-  text-align: center;
-  padding: 120px 20px;
-}
+    .card:hover {
+      transform: scale(1.05);
+    }
 
-.hero-text h2 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  color: #F26B6B; /* Tiêu đề hồng đất */
-}
+    footer {
+      background-color: #FFD700;
+      color: #001F3F;
+      text-align: center;
+      padding: 20px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <header>My Bookstore & Café</header>
 
-.hero-text span {
-  color: #FFD4D4; /* Hồng nhạt hơn để tạo chiều sâu */
-}
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Books</a>
+    <a href="#">Café</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
 
-.hero-text p {
-  margin-bottom: 20px;
-  color: #FAF3F3;
-}
+  <section>
+    <h2>Featured Books</h2>
+    <div class="card">Book 1 - The Art of Living</div>
+    <div class="card">Book 2 - The Golden Mind</div>
+    <div class="card">Book 3 - Blue Horizon</div>
+  </section>
 
-/* ✨ Nút bấm */
-button {
-  background-color: #F26B6B;
-  color: #FAF3F3;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 25px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-button:hover {
-  background-color: #0E3A5D;
-  color: #FAF3F3;
-  transform: translateY(-3px);
-}
-
-/* 📚 Phần nội dung */
-.section {
-  max-width: 900px;
-  margin: 60px auto;
-  text-align: center;
-  padding: 0 20px;
-}
-
-.section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #0E3A5D;
-}
-
-/* 🧱 Dự án */
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.project-card {
-  background-color: #fff;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(14,58,93,0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 14px rgba(14,58,93,0.2);
-}
-
-/* 📧 Liên hệ */
-.email-link {
-  color: #F26B6B;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.email-link:hover {
-  text-decoration: underline;
-  color: #0E3A5D;
-}
-
-/* 🌸 Footer */
-footer {
-  background-color: #0E3A5D;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-  font-size: 0.9rem;
-  color: #FAF3F3;
-}
+  <footer>© 2025 My Bookstore & Café | Designed by Bảo Anh</footer>
+</body>
+</html>
 
