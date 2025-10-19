@@ -7,17 +7,17 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* 🎨 Tone vàng + xanh + đỏ */
+/* 🌌 Nền tổng thể */
 body {
-  background-color: #F7E85E; /* Vàng sáng nổi bật */
-  color: #2B2B2B;
+  background-color: #0000A3; /* Xanh cobalt */
+  color: #FFFFFF;
   line-height: 1.6;
 }
 
-/* 🌟 Header */
+/* 🔵 Header */
 header {
-  background-color: #3973B3; /* Xanh pastel nhẹ */
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  background-color: #00008B; /* Xanh navy đậm hơn nhẹ */
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -40,19 +40,19 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #FFFFFF; /* trắng nổi trên nền xanh */
+  color: #FFD900; /* Vàng neon nổi */
   font-weight: 500;
   transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #C23B22; /* đỏ hồng nổi bật */
+  color: #FF6B00; /* Cam neon */
 }
 
-/* ☀️ Hero Section */
+/* 🌅 Hero */
 #hero {
-  background-color: #F7E85E;
-  color: #C23B22;
+  background: linear-gradient(135deg, #0000A3, #10006B);
+  color: #FFD900;
   text-align: center;
   padding: 120px 20px;
 }
@@ -60,21 +60,21 @@ nav a:hover {
 .hero-text h2 {
   font-size: 2.5rem;
   margin-bottom: 10px;
-  color: #C23B22; /* đỏ tiêu đề */
+  color: #FF6B00; /* Cam neon */
 }
 
 .hero-text span {
-  color: #3973B3; /* xanh nhẹ tạo tương phản */
+  color: #FF2366; /* Hồng neon */
 }
 
 .hero-text p {
   margin-bottom: 20px;
-  color: #2B2B2B;
+  color: #FFFFFF;
 }
 
-/* ✨ Nút bấm */
+/* 🔥 Nút bấm */
 button {
-  background-color: #C23B22;
+  background-color: #FF6B00;
   color: #FFFFFF;
   border: none;
   padding: 10px 20px;
@@ -85,11 +85,11 @@ button {
 }
 
 button:hover {
-  background-color: #3973B3;
+  background-color: #FF2366;
   transform: translateY(-3px);
 }
 
-/* 📚 Phần nội dung */
+/* 📚 Nội dung */
 .section {
   max-width: 900px;
   margin: 60px auto;
@@ -100,7 +100,7 @@ button:hover {
 .section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #C23B22;
+  color: #FFD900; /* vàng sáng */
 }
 
 /* 🧱 Dự án */
@@ -111,33 +111,33 @@ button:hover {
 }
 
 .project-card {
-  background-color: #FFFFFF;
+  background-color: #0A0A7A; /* xanh tối */
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 4px 10px rgba(57,115,179,0.2);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 14px rgba(57,115,179,0.3);
+  box-shadow: 0 6px 14px rgba(255, 219, 0, 0.4);
 }
 
-/* 📧 Liên hệ */
+/* ✉️ Liên hệ */
 .email-link {
-  color: #C23B22;
+  color: #FF6B00;
   text-decoration: none;
   font-weight: 600;
 }
 
 .email-link:hover {
   text-decoration: underline;
-  color: #3973B3;
+  color: #FFD900;
 }
 
-/* 🌻 Footer */
+/* 🌙 Footer */
 footer {
-  background-color: #3973B3;
+  background-color: #00006B;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
