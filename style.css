@@ -174,3 +174,88 @@ footer {
 .project-gallery img:hover {
   transform: scale(1.02);
 }
+/* SKILLS & TOOLS LAYOUT */
+.skills-tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* SKILLS SIDE */
+.skills-container {
+  flex: 1;
+  min-width: 300px;
+}
+
+.skill {
+  margin-bottom: 18px;
+}
+
+.skill p {
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #813405;
+}
+
+.skill-bar {
+  background-color: #ffe8c2;
+  border-radius: 20px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.skill-bar span {
+  display: block;
+  height: 100%;
+  background-color: #D45113;
+  border-radius: 20px;
+}
+
+/* TOOLS SIDE */
+.tools {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+  background-color: #fff8e1;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.tools h3 {
+  color: #813405;
+  margin-bottom: 15px;
+}
+
+.tool-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+}
+
+.tool img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 6px;
+}
+
+.tool p {
+  font-size: 0.9rem;
+  color: #3a2e28;
+  font-weight: 500;
+}
+
+
