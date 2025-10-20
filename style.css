@@ -141,30 +141,36 @@ footer {
   font-size: 0.9rem;
   color: #F8DDA4; /* Be vàng nhạt nổi bật trên nền xanh */
 }
-/* Căn chỉnh project gallery */
+/* Cập nhật gallery: scroll ngang, hình to */
 .project-gallery {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin-top: 10px;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+  scrollbar-width: thin; /* gọn thanh cuộn */
 }
 
-/* Giới hạn kích thước hình ảnh trong project */
+.project-gallery::-webkit-scrollbar {
+  height: 8px;
+}
+.project-gallery::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+/* Hình to, chiếm gần hết khung web */
 .project-gallery img {
-  width: 220px;          /* thu nhỏ hình lại cho vừa */
-  height: auto;          /* giữ tỉ lệ tự nhiên */
-  border-radius: 10px;   /* bo góc nhẹ cho đẹp */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* đổ bóng nhẹ */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 1000px; /* giới hạn chiều rộng để vừa trang */
+  height: auto;
+  border-radius: 20px;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
 }
 
-/* Hiệu ứng hover nhẹ cho hình */
 .project-gallery img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
 }
-
-
-
